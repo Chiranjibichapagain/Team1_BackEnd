@@ -10,9 +10,9 @@ server.listen(process.env.PORT || config.PORT, () => {
 var io = require('socket.io')(server, {
   cors: {
     origin: '*',
-    methods: ['GET', 'POST'],
-    allowedHeaders: ['my-custom-header'],
-    credentials: true,
+    // methods: ['GET', 'POST'],
+    // allowedHeaders: ['my-custom-header'],
+    // credentials: true,
   },
 });
 
